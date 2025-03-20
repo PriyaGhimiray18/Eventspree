@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventSphere - Find & Book Events</title>
+    <link rel="icon" type="image/png" href="images/event spree.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css_code.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="images/event spree.jpeg" alt="EventSphere Logo" style="width: 40px; height: 40px;">
+            </a>
+            <a class="navbar-brand" href="#">EventSphere</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            <!-- Search Form -->
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search events" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center p-5">
+        <h1>Discover & Book Exciting Events</h1>
+        <p>Find concerts, meetups, workshops, and more!</p>
+        <a href="#events" class="btn btn-light btn-lg">Browse Events</a>
+    </header>
+
+    <!-- Event Listing Section -->
+    <section id="events" class="container my-5">
+        <h2 class="text-center mb-4">Upcoming Events</h2>
+        <div class="row" id="event-list">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="images/dance.jpeg" class="card-img-top" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Of CST</h5>
+                        <p class="card-text">Experience live music and dance like never before.</p>
+                        <p class="countdown" data-time="2025-04-13T23:59:59"><strong>Time Left:</strong><span></span></p>
+                        <a href="#" class="btn btn-primary">See more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="images/innovation.jpeg" class="card-img-top" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Innovation Forum</h5>
+                        <p class="card-text">Network with industry leaders and professionals.</p>
+                        <p class="countdown" data-time="2025-03-20T18:00:00"><strong>Time Left:</strong> <span></span></p>
+                        <a href="#" class="btn btn-primary">See more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="images/football.jpeg" class="card-img-top" alt="Event 3">
+                    <div class="card-body">
+                        <h5 class="card-title">CST Football Tournament</h5>
+                        <p class="card-text">Tighten your boots, football coming soon.</p>
+                        <p class="countdown" data-time="2025-03-13T10:00:00"><strong>Time Left:</strong> <span></span></p>
+                        <a href="#" class="btn btn-primary">See more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 EventSphere | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
